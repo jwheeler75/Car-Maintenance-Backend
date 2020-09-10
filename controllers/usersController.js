@@ -8,6 +8,7 @@ router.get("/profile/:id", async (req, res) => {
   let user = await UserModel.findByPk(req.params.id, {
     include: CarsModel,
   });
+  console.log(user);
   res.json({ user });
 });
 
