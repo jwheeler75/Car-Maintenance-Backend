@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       lastOilChangeMileage: DataTypes.INTEGER,
       nextOilChangeMileage: DataTypes.INTEGER,
       lastTireRotationMileage: DataTypes.INTEGER,
-      nextTireRotationMilage: DataTypes.INTEGER,
+      nextTireRotationMileage: DataTypes.INTEGER,
       userID: DataTypes.INTEGER,
     },
     {

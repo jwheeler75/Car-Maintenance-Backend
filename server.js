@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const createError = require("http-errors");
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 const verifyToken = (req, res, next) => {
   let token = req.cookies.jwt;
@@ -38,6 +38,6 @@ app.use("/api/auth", require("./controllers/authController.js"));
 app.use("/api/users", require("./controllers/usersController.js"));
 app.use("/api/cars", require("./controllers/carsController.js"));
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Nodemon listening");
 });

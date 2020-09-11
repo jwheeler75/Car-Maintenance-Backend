@@ -20,7 +20,7 @@ module.exports = {
       lastTireRotationMileage: {
         type: Sequelize.INTEGER,
       },
-      nextTireRotationMilage: {
+      nextTireRotationMileage: {
         type: Sequelize.INTEGER,
       },
       userID: {
