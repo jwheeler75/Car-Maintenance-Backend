@@ -35,6 +35,7 @@ router.post("/", async (req, res) => {
 
 // UPDATE A CAR
 router.put("/:id", async (req, res) => {
+  console.log("this is the stuff", req.body, req.params);
   let car = await CarsModel.update(req.body, {
     where: { id: req.params.id },
     returning: true,
